@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEE5409E293D8BA2007B4A63 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5409D293D8BA2007B4A63 /* UserModel.swift */; };
 		CEEFA3BE2938B77600DACFE9 /* Fold_V1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFA3BD2938B77600DACFE9 /* Fold_V1App.swift */; };
 		CEEFA3C02938B77600DACFE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFA3BF2938B77600DACFE9 /* ContentView.swift */; };
 		CEEFA3C22938B77800DACFE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEFA3C12938B77800DACFE9 /* Assets.xcassets */; };
 		CEEFA3C52938B77800DACFE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEFA3C42938B77800DACFE9 /* Preview Assets.xcassets */; };
+		CEEFA3CD2938B85F00DACFE9 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = CEEFA3CC2938B85F00DACFE9 /* CodeScanner */; };
+		CEEFA3D02938B90900DACFE9 /* QRscan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFA3CF2938B90900DACFE9 /* QRscan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEE5409D293D8BA2007B4A63 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CEEFA3BA2938B77600DACFE9 /* Fold V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fold V1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEFA3BD2938B77600DACFE9 /* Fold_V1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fold_V1App.swift; sourceTree = "<group>"; };
 		CEEFA3BF2938B77600DACFE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEEFA3C12938B77800DACFE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEFA3C42938B77800DACFE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEEFA3CE2938B89400DACFE9 /* Fold-V1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fold-V1-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CEEFA3CF2938B90900DACFE9 /* QRscan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRscan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEFA3CD2938B85F00DACFE9 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +58,11 @@
 		CEEFA3BC2938B77600DACFE9 /* Fold V1 */ = {
 			isa = PBXGroup;
 			children = (
+				CEEFA3D8293A1C2B00DACFE9 /* Models */,
+				CEEFA3CE2938B89400DACFE9 /* Fold-V1-Info.plist */,
 				CEEFA3BD2938B77600DACFE9 /* Fold_V1App.swift */,
 				CEEFA3BF2938B77600DACFE9 /* ContentView.swift */,
+				CEEFA3CF2938B90900DACFE9 /* QRscan.swift */,
 				CEEFA3C12938B77800DACFE9 /* Assets.xcassets */,
 				CEEFA3C32938B77800DACFE9 /* Preview Content */,
 			);
@@ -65,6 +75,14 @@
 				CEEFA3C42938B77800DACFE9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEEFA3D8293A1C2B00DACFE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEE5409D293D8BA2007B4A63 /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +101,9 @@
 			dependencies = (
 			);
 			name = "Fold V1";
+			packageProductDependencies = (
+				CEEFA3CC2938B85F00DACFE9 /* CodeScanner */,
+			);
 			productName = "Fold V1";
 			productReference = CEEFA3BA2938B77600DACFE9 /* Fold V1.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +132,9 @@
 				Base,
 			);
 			mainGroup = CEEFA3B12938B77600DACFE9;
+			packageReferences = (
+				CEEFA3CB2938B85F00DACFE9 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = CEEFA3BB2938B77600DACFE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEFA3C02938B77600DACFE9 /* ContentView.swift in Sources */,
+				CEEFA3D02938B90900DACFE9 /* QRscan.swift in Sources */,
+				CEE5409E293D8BA2007B4A63 /* UserModel.swift in Sources */,
 				CEEFA3BE2938B77600DACFE9 /* Fold_V1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +296,14 @@
 				DEVELOPMENT_TEAM = 35FWUG94V8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fold-V1-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +328,14 @@
 				DEVELOPMENT_TEAM = 35FWUG94V8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fold-V1-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEEFA3CB2938B85F00DACFE9 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEEFA3CC2938B85F00DACFE9 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEFA3CB2938B85F00DACFE9 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEEFA3B22938B77600DACFE9 /* Project object */;
 }
