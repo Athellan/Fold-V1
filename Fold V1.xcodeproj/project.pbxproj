@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CEE5409E293D8BA2007B4A63 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5409D293D8BA2007B4A63 /* UserModel.swift */; };
+		CEE540A6293E035B007B4A63 /* GetApiVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE540A5293E035B007B4A63 /* GetApiVm.swift */; };
 		CEEFA3BE2938B77600DACFE9 /* Fold_V1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFA3BD2938B77600DACFE9 /* Fold_V1App.swift */; };
 		CEEFA3C02938B77600DACFE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFA3BF2938B77600DACFE9 /* ContentView.swift */; };
 		CEEFA3C22938B77800DACFE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEFA3C12938B77800DACFE9 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		CEE5409D293D8BA2007B4A63 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CEE540A5293E035B007B4A63 /* GetApiVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiVm.swift; sourceTree = "<group>"; };
 		CEEFA3BA2938B77600DACFE9 /* Fold V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fold V1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEFA3BD2938B77600DACFE9 /* Fold_V1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fold_V1App.swift; sourceTree = "<group>"; };
 		CEEFA3BF2938B77600DACFE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				CEEFA3BD2938B77600DACFE9 /* Fold_V1App.swift */,
 				CEEFA3BF2938B77600DACFE9 /* ContentView.swift */,
 				CEEFA3CF2938B90900DACFE9 /* QRscan.swift */,
+				CEE540A5293E035B007B4A63 /* GetApiVm.swift */,
 				CEEFA3C12938B77800DACFE9 /* Assets.xcassets */,
 				CEEFA3C32938B77800DACFE9 /* Preview Content */,
 			);
@@ -163,6 +166,7 @@
 			files = (
 				CEEFA3C02938B77600DACFE9 /* ContentView.swift in Sources */,
 				CEEFA3D02938B90900DACFE9 /* QRscan.swift in Sources */,
+				CEE540A6293E035B007B4A63 /* GetApiVm.swift in Sources */,
 				CEE5409E293D8BA2007B4A63 /* UserModel.swift in Sources */,
 				CEEFA3BE2938B77600DACFE9 /* Fold_V1App.swift in Sources */,
 			);
