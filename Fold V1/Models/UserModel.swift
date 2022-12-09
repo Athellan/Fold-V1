@@ -1,10 +1,3 @@
-//
-//  UserModel.swift
-//  Fold V1
-//
-//  Created by JB on 05/12/2022.
-//
-
 import Foundation
 
 struct Response: Codable {
@@ -16,7 +9,7 @@ struct Datas: Codable {
 }
 
 struct User: Codable {
-    let _id: Int
+    let id: Int
     let username: String
     let password: String
 }

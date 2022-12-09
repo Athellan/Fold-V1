@@ -8,39 +8,8 @@ struct ContentView: View {
     @State private var shouldNavigate = false
     
     func handleButtonPress() {
-        let url = URL(string: "https://foldlab.io:8081/api/loginScanAccount")!
-        
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let data = data {
-                do {
-                    
-                    let decoder = JSONDecoder()
-                    let response = try decoder.decode(Response.self, from: data)
-                    
-                    let user = response.datas.user
-                    
-                    var request = URLRequest(url: url)
-                    request.httpMethod = "POST"
-                    
-                    let username = user.username
-                    let password = user.password
-                    
-                    if username == self.username && password == self.password {
-                        
-                        DispatchQueue.main.async {
-                            let qrScanView = QRscan()
-                            NavigationLink(destination: qrScanView) {
-                                EmptyView()
-                            }
-                        }
-                    }
-                } catch let error {
-                    print(error)
-                }
-            }
-        }
-        task.resume()
     }
+ 
     
     var body: some View {
         NavigationView {
